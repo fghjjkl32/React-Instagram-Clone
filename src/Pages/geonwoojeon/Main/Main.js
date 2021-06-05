@@ -5,6 +5,7 @@ import Feed from '../Components/Feed/Feed';
 import { Link } from 'react-router-dom';
 import { INFO } from '../Components/Footer/FooterInfomation';
 import Follow from '../Components/aside/Follow';
+import Story from '../Components/Story/Story';
 
 class Main extends React.Component {
   constructor() {
@@ -13,6 +14,7 @@ class Main extends React.Component {
       feedList: [],
       resize: '',
       followList: [],
+      storyList: [],
     };
   }
 
@@ -41,6 +43,16 @@ class Main extends React.Component {
         });
       });
 
+    fetch('http://localhost:3001/data/story.json', {
+      method: 'GET',
+    })
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          storyList: data,
+        });
+      });
+
     document.querySelector('#main-right').style.left = `${
       167 + window.innerWidth / 2
     }px`;
@@ -53,7 +65,7 @@ class Main extends React.Component {
   };
 
   render() {
-    const { feedList, followList } = this.state;
+    const { feedList, followList, storyList } = this.state;
     return (
       <>
         <div className="main">
@@ -64,126 +76,15 @@ class Main extends React.Component {
                 <div className="story">
                   <div className="story-image">
                     <ul>
-                      <li>
-                        <Link to="/">
-                          <img
-                            className="story-profile"
-                            alt="story-profile-1"
-                            src="images/geonwoojeon/images/profile/1.jpeg"
+                      {storyList.map(content => {
+                        return (
+                          <Story
+                            profileImg={content.profileImg}
+                            nickName={content.nickName}
+                            key={content.id}
                           />
-                        </Link>
-                        <span className="story-ID">j_u_n98</span>
-                        <img
-                          className="stroy-ring"
-                          alt="ring"
-                          src="images/geonwoojeon/images/icon/Instagram_Stories_ring.svg"
-                        />
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <img
-                            className="story-profile"
-                            alt="story-profile-2"
-                            src="images/geonwoojeon/images/profile/2.jpeg"
-                          />
-                        </Link>
-                        <span className="story-ID">eru77</span>
-                        <img
-                          className="stroy-ring"
-                          alt="ring"
-                          src="images/geonwoojeon/images/icon/Instagram_Stories_ring.svg"
-                        />
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <img
-                            className="story-profile"
-                            alt="story-profile-3"
-                            src="images/geonwoojeon/images/profile/3.jpeg"
-                          />
-                        </Link>
-                        <span className="story-ID">rktbs1</span>
-                        <img
-                          className="stroy-ring"
-                          alt="ring"
-                          src="images/geonwoojeon/images/icon/Instagram_Stories_ring.svg"
-                        />
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <img
-                            className="story-profile"
-                            alt="story-profile-4"
-                            src="images/geonwoojeon/images/profile/4.jpeg"
-                          />
-                        </Link>
-                        <span className="story-ID">gemsto..</span>
-                        <img
-                          className="stroy-ring"
-                          alt="ring"
-                          src="images/geonwoojeon/images/icon/Instagram_Stories_ring.svg"
-                        />
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <img
-                            className="story-profile"
-                            alt="story-profile-5"
-                            src="images/geonwoojeon/images/profile/5.jpeg"
-                          />
-                        </Link>
-                        <span className="story-ID">l_s._</span>
-                        <img
-                          className="stroy-ring"
-                          src="images/geonwoojeon/images/icon/Instagram_Stories_ring.svg"
-                          alt="ring"
-                        />
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <img
-                            className="story-profile"
-                            alt="story-profile-6"
-                            src="images/geonwoojeon/images/profile/6.jpeg"
-                          />
-                        </Link>
-                        <span className="story-ID">aydddd__</span>
-                        <img
-                          className="stroy-ring"
-                          alt="ring"
-                          src="images/geonwoojeon/images/icon/Instagram_Stories_ring.svg"
-                        />
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <img
-                            className="story-profile"
-                            alt="story-profile-7"
-                            src="images/geonwoojeon/images/profile/7.jpeg"
-                          />
-                        </Link>
-                        <span className="story-ID">p_s_l.O</span>
-                        <img
-                          className="stroy-ring"
-                          alt="ring"
-                          src="images/geonwoojeon/images/icon/Instagram_Stories_ring.svg"
-                        />
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <img
-                            className="story-profile"
-                            alt="story-profile-8"
-                            src="images/geonwoojeon/images/profile/8.jpeg"
-                          />
-                        </Link>
-                        <span className="story-ID">cdaa_p</span>
-                        <img
-                          className="stroy-ring"
-                          alt="ring"
-                          src="images/geonwoojeon/images/icon/Instagram_Stories_ring.svg"
-                        />
-                      </li>
+                        );
+                      })}
                     </ul>
                   </div>
                   <button type="button" className="story-arrow">
