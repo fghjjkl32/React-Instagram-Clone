@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "author": "raing_8",
+    "likeCount": "234",
+    "title": " 아이패드 드로잉🔥",
+    "commentCount": "9",
+    "img": "images/geonwoojeon/images/feed/ipad2.jpeg",
+    "profileImg": "images/geonwoojeon/images/profile/me.jpeg",
+    "pastTime": "3시간 전",
+    "comments": [
+      {
+        "id": "1",
+        "commentProfileImg": "images/geonwoojeon/images/profile/6.jpeg",
+        "userName": "Skd_d.s",
+        "content": "good~",
+        "commentPastTime": "1시간 전"
+      },
+      {
+        "id": "2",
+        "commentProfileImg": "images/geonwoojeon/images/profile/3.jpeg",
+        "userName": "m_M.M_mk",
+        "content": "👍👍👍👍",
+        "commentPastTime": "3시간 전"
+      },
+      {
+        "id": "3",
+        "commentProfileImg": "images/geonwoojeon/images/profile/2.jpeg",
+        "userName": "wecode",
+        "content": "Welcome to world best coding bootcamp!",
+        "commentPastTime": "7시간 전"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "author": "dda_._._asa",
+    "likeCount": "1940",
+    "title": " 밖에서 칵테일❣️",
+    "commentCount": "102",
+    "img": "images/geonwoojeon/images/feed/ka1.jpeg",
+    "profileImg": "images/geonwoojeon/images/profile/1.jpeg",
+    "pastTime": "2일 전",
+    "comments": [
+      {
+        "id": "1",
+        "commentProfileImg": "images/geonwoojeon/images/profile/1.jpeg",
+        "userName": "wecode",
+        "content": "Welcome to world best coding bootcamp!",
+        "commentPastTime": "1분 전"
+      },
+      {
+        "id": "2",
+        "commentProfileImg": "images/geonwoojeon/images/profile/2.jpeg",
+        "userName": "m_M.M_mk",
+        "content": "ssssaa~",
+        "commentPastTime": "30분 전"
+      },
+      {
+        "id": "3",
+        "commentProfileImg": "images/geonwoojeon/images/profile/3.jpeg",
+        "userName": "qqsasasq",
+        "content": "12sasa3",
+        "commentPastTime": "5시간 전"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "author": "ffx_xc",
+    "likeCount": "87",
+    "title": " 초콜릿 같지않은 초콜릿💩",
+    "commentCount": "7",
+    "img": "images/geonwoojeon/images/feed/cho.jpeg",
+    "profileImg": "images/geonwoojeon/images/profile/2.jpeg",
+    "pastTime": "5일 전",
+    "comments": [
+      {
+        "id": "1",
+        "commentProfileImg": "images/geonwoojeon/images/profile/4.jpeg",
+        "userName": "namme1",
+        "content": "Hello world",
+        "commentPastTime": "20초 전"
+      },
+      {
+        "id": "2",
+        "commentProfileImg": "images/geonwoojeon/images/profile/5.jpeg",
+        "userName": "name2~d",
+        "content": "react",
+        "commentPastTime": "1시간 전"
+      },
+      {
+        "id": "3",
+        "commentProfileImg": "images/geonwoojeon/images/profile/7.jpeg",
+        "userName": "name333",
+        "content": "javascript",
+        "commentPastTime": "7시간 전"
+      }
+    ]
+  }
+]

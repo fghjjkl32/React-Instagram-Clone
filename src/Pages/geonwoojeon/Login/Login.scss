@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import '../Styles/Common.scss';
+@import '../Styles/Reset.scss';
+
+.login main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .login-box {
+    display: flex;
+    padding: 10px 0;
+    margin: 0 0 10px;
+    width: 350px;
+    height: 380px;
+    flex-direction: column;
+    border: 1px solid #ccc;
+
+    .title {
+      margin: 22px auto 12px;
+      font-family: 'Lobster', cursive;
+      font-size: 40px;
+    }
+
+    .input-boxes {
+      margin: 24px 40px 8px 40px;
+
+      input {
+        width: 100%;
+        height: 36px;
+        padding: 9px 0 7px 8px;
+        margin-top: 6px;
+        background: #fafafa;
+        color: $black-color;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        font-size: $middle-font;
+        align-items: center;
+      }
+    }
+
+    #login-button {
+      padding: 5px 9px;
+      margin: 8px 40px;
+      background-color: $blue-color;
+      color: #fff;
+      font-size: $middle-font;
+      line-height: 18px;
+      border: 1px solid transparent;
+      opacity: 1;
+      border-radius: 4px;
+      font-weight: 800;
+      transition: 0.5s;
+
+      &:disabled {
+        background-color: $blue-color;
+        opacity: 0.3;
+      }
+    }
+
+    .progerss-bar {
+      display: flex;
+      padding: 10px 40px 18px;
+      align-items: center;
+
+      .grogress-bar-left {
+        height: 1px;
+        background-color: #dbdbdb;
+        flex-grow: 1;
+      }
+
+      .preogress-bar-text {
+        margin: 0 18px;
+        color: #8e8e8e;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 15px;
+      }
+
+      .grogress-bar-right {
+        height: 1px;
+        background-color: #dbdbdb;
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .sign-up-box {
+    position: relative;
+  }
+
+  .login-box {
+    .facebook-button {
+      margin: 8px 80px;
+      height: 20px;
+      color: #385185;
+      border: 0;
+      background: transparent;
+      font-size: $middle-font;
+      font-weight: 600;
+      line-height: 18px;
+    }
+
+    #facebooke-login span img {
+      position: relative;
+      top: -2px;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    #forget-password {
+      margin-top: 12px;
+      font-size: $small-font;
+    }
+  }
+
+  .sign-up-box {
+    padding: 10px 0;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+    align-items: center;
+
+    div {
+      margin: 15px;
+      color: $black-color;
+      font-size: $middle-font;
+      text-align: center;
+
+      a {
+        color: $blue-color;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
