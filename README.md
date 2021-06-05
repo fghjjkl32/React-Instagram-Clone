@@ -50,9 +50,8 @@ Git을 활용한 Westagram React 팀 프로젝트
 ![](https://images.velog.io/images/rain98/post/241aa68e-8bb0-4d87-906c-7e3703a14286/1-4.gif)
 
 ## 모달창 구현
+![1-5](https://user-images.githubusercontent.com/73716178/120894548-f6cac080-c653-11eb-8502-f85cea175ae7.gif)
 
-![](https://images.velog.io/images/rain98/post/8ddfc814-60d0-48d8-85c5-2dea8f93f043/1-5.gif)
 
----
 
 개인적으로 시간나면 완성해보고 싶어서 따로 repository를 생성 했습니다
